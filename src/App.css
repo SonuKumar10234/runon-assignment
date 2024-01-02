@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.App{
+    display: flex;
+    height: 100vh;
+}
+.toolbar{
+    width:25%; 
+    background:#3f3fa8; 
+    padding:20px 0px; 
+    display:flex; 
+    justify-content: space-between;
+}
+ button{
+    background: orange;
+    color: #000;
+    font-size: 16px;
+    height: 50px;
+    padding: 6px 30px;
+    border: none;
+    border-radius: 6px;
+}
+.website-section{
+    padding: 10px;
+    width:75%;
+    background:#ad44ad;
+}
+.website-content{
+    list-style: none;
+    color: #fff;
+    margin-top: 20px;
+    border: 1px solid #c6c2c2;
+    padding: 20px;
+}
+.website-content li{
+    margin: 5px 0px;
+}
+
+@media only screen and (max-width:768px){
+    .App{
+        flex-direction: column;
+    }
+    .toolbar{
+        width:100%;
+    }
+    .website-section{
+        width:100%;
+    }
+}
